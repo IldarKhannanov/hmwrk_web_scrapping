@@ -61,7 +61,7 @@ for num_page in range(7) :
     print()
 print()
 
-with open('parsed_data.json', 'w') as f:
+with open('parsed_data.json', 'w', encoding='utf-8') as f:
     json.dump(parsed_data, f, ensure_ascii=False, indent=2)
 
 print('Complete')
